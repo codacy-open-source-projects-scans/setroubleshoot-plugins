@@ -17,17 +17,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-24 13:53+0100\n"
-"PO-Revision-Date: 2018-08-03 09:51-0400\n"
+"POT-Creation-Date: 2022-11-24 11:10+0100\n"
+"PO-Revision-Date: 2022-11-24 17:23+0000\n"
 "Last-Translator: Vit Mojzis <vmojzis@redhat.com>\n"
-"Language-Team: Czech (http://www.transifex.com/projects/p/fedora/language/"
-"cs/)\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
+"setroubleshoot/plugins/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: ../src/allow_anon_write.py:27
 msgid ""
@@ -1316,10 +1316,10 @@ msgstr "Pokud na tomto stroji chcete zakázat IPV6"
 #: ../src/disable_ipv6.py:41
 msgid ""
 "you need to set /proc/sys/net/ipv6/conf/all/disable_ipv6 to 1 and do not "
-"blacklist the module'"
+"disable the ipv6 kernel module'"
 msgstr ""
 "je potřeba nastavit /proc/sys/net/ipv6/conf/all/disable_ipv6 na hodnotu 1 a "
-"nedávat modul na blacklist'"
+"nevypínat ipv6 modul jádra'"
 
 #: ../src/disable_ipv6.py:42
 msgid ""
@@ -1337,6 +1337,9 @@ msgid ""
 "    SELinux is preventing access to a file labeled unlabeled_t.\n"
 "    "
 msgstr ""
+"\n"
+"    SELinux zabraňuje přístupu k souboru označeném unlabeled_t.\n"
+"    "
 
 #: ../src/file.py:31
 msgid ""
@@ -1383,11 +1386,11 @@ msgstr "je třeba plně přeznačit."
 
 #: ../src/file.py:73
 msgid "Try to fix the label."
-msgstr ""
+msgstr "Pokusit se opravit značku."
 
 #: ../src/file.py:76
 msgid "Relabel the whole file system. Includes reboot!"
-msgstr ""
+msgstr "Opravit značky v celém souborovém systému. Vyžaduje restart!"
 
 #: ../src/filesystem_associate.py:27
 msgid ""

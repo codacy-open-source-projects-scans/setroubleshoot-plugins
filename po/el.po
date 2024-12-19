@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-24 13:53+0100\n"
+"POT-Creation-Date: 2022-11-24 11:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -860,7 +860,7 @@ msgstr ""
 #: ../src/disable_ipv6.py:41
 msgid ""
 "you need to set /proc/sys/net/ipv6/conf/all/disable_ipv6 to 1 and do not "
-"blacklist the module'"
+"disable the ipv6 kernel module'"
 msgstr ""
 
 #: ../src/disable_ipv6.py:42
