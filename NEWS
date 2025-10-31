@@ -1,0 +1,39 @@
+setroubleshoot-plugins 3.3.15                              2025-01-06
+ - restorecon.py: exclude more paths
+ - Improve disable_ipv6 plugin then_text
+ - pdate generated configuration files
+ - Update translations
+
+setroubleshoot-plugins 3.3.14                              2021-03-26
+ - Update translations
+
+setroubleshoot-plugins 3.3.13                              2020-08-12
+ - Add 'fur' into shipped locales
+ - Update translations
+
+setroubleshoot-plugins 3.3.12                              2020-04-16
+ - Update translations
+ - Update deprecated type references
+ - Use get_package_nvr* functions instead of get_rpm_nvr*
+
+setroubleshoot-plugins 3.3.11                              2019-11-20
+ - Add plugin which analyzes execmem denials
+ - Add missing "If " strings
+ - Update qemu_blk_image and qemu_file_image
+ - Update "xen_image" plugin
+ - update "file" plugin
+ - Update "missing" scripts to automake-1.15
+
+setroubleshoot-plugins 3.3.10                              2018-12-07
+ - Handle no "allowed_target_types" properly
+ - bind_ports: Do not use when there are no allowed_target_types
+ - Fix summary and "if" text for AVCs with unknown target path
+ - plugins: Update translations
+
+setroubleshoot-plugins 3.3.9                               2017-11-18
+ - Fix catchall plugin message for process2
+
+setroubleshoot-plugins 3.3.8                               2017-09-14
+ - Do not split If sentences to framework and plugins - requires
+   setroubleshoot 3.3.13 at least
+ - Update translations
