@@ -66,7 +66,7 @@ home directory from a previous installation that did not use SELinux, 'restoreco
         if args == (1,0):
             return '/sbin/restorecon -R -v $TARGET_PATH'
         else:
-            return 'touch /.autorelabel; reboot'
+            return ['touch /.autorelabel', 'reboot']
 
     def init_args(self, args):
         if args == (1,0):

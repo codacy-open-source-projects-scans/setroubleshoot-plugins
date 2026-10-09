@@ -40,7 +40,8 @@ class plugin(Plugin):
     If you want to change the file context of $TARGET_PATH so that the automounter can execute it you can execute "chcon -t bin_t $TARGET_PATH".  If you want this to survive a relabel, you need to permanently change the file context: execute  "semanage fcontext -a -t bin_t '$FIX_TARGET_PATH'".
     ''')
 
-    fix_cmd = """/usr/sbin/semanage fcontext -a -t bin_t '$FIX_TARGET_PATH';/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""
+    fix_cmd = ["""/usr/sbin/semanage fcontext -a -t bin_t '$FIX_TARGET_PATH'""",
+               """/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""]
 
     if_text = 'If you want to allow automounter to execute $TARGET_PATH'
 

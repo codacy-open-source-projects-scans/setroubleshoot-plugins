@@ -54,9 +54,14 @@ class plugin(Plugin):
             return _('If you believe that $SOURCE_BASE_PATH should be allowed $ACCESS access on $TARGET_CLASS labeled $TARGET_TYPE by default.')
         return _('If you believe that $SOURCE_BASE_PATH should be allowed $ACCESS access on the $TARGET_BASE_PATH $TARGET_CLASS by default.')
 
-    then_text = _('You should report this as a bug.\nYou can generate a local policy module to allow this access.')
-    do_text = _("""Allow this access for now by executing:
-# ausearch -c '$SOURCE' --raw | audit2allow -M my-$MODULE_NAME
+    then_text = _('''
+    You should report this as a bug.\n
+    If you are certain this access is legitimate and not an intrusion attempt, you
+    can generate a local policy module to allow it.
+    Custom policy modules are not supported as they may weaken the system policy and expose the system to security vulnerabilities.
+    ''')
+
+    do_text = _("""# ausearch -c '$SOURCE' --raw | audit2allow -M my-$MODULE_NAME
 # semodule -X 300 -i my-$MODULE_NAME.pp""")
 
     def __init__(self):

@@ -81,7 +81,8 @@ If you want this to survive a relabel, execute
 # semanage fcontext -a -t textrel_shlib_t '$FIX_TARGET_PATH';restorecon -v '$FIX_TARGET_PATH'
 """
 
-    fix_cmd = """/usr/sbin/semanage fcontext -a -t textrel_shlib_t '$FIX_TARGET_PATH';/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""
+    fix_cmd = ["""/usr/sbin/semanage fcontext -a -t textrel_shlib_t '$FIX_TARGET_PATH'""",
+               """/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""]
 
     def init_args(self, args):
         if len(args) > 0:

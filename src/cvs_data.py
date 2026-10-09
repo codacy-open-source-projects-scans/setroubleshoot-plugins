@@ -46,7 +46,8 @@ class plugin(Plugin):
     do_text = """# semanage fcontext -a -t cvs_data_t '$FIX_TARGET_PATH'
 # restorecon -v '$FIX_TARGET_PATH'"""
 
-    fix_cmd = """/usr/sbin/semanage fcontext -a -t cvs_data_t '$FIX_TARGET_PATH';/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""
+    fix_cmd = ["""/usr/sbin/semanage fcontext -a -t cvs_data_t '$FIX_TARGET_PATH'""",
+               """/usr/sbin/restorecon -v '$FIX_TARGET_PATH'"""]
 
     def __init__(self):
         Plugin.__init__(self, __name__)
